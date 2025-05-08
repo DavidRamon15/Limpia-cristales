@@ -9,7 +9,7 @@ import { InstagramPost } from '../models/instagram-post';
   providedIn: 'root'
 })
 export class InstagramService {
-  private accessToken = 'IGAAG33QYaZCGpBZAE5BLTJseEI1UGFWR3IwR0c5ZATVfQkZAwaWpvanBQSmo5UXpzYWQ2bzdMMFg5UmR6WmZAyOC1uVDZAkNGYtVktDZAjd2bmM0aFFiYWNnUzRJdUtObkJRX2RqWGlsb1RaMTlDTnJOYzI4dTZAHWHJxLVdHNHBLdy1aawZDZD';
+  private accessToken = '';
   private apiUrl: string = 'https://graph.instagram.com/me/media';
 
   constructor(private http: HttpClient) { }
