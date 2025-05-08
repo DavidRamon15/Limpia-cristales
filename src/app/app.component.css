@@ -1,0 +1,184 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Aplicar la fuente a toda la web */
+/*body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+*/
+main {
+    /*padding-top: 3.2rem;*/
+    /* Ajusta según la altura del navbar */
+}
+
+.cabecera {
+    /*background-color: #0d6efd;
+    //color: #fff;
+    //height: 70px;*/
+    margin: 0 auto;
+}
+
+.header-black {
+    background-color: black !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo adicional para títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    /* Negrita para destacar títulos */
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+/* Estilo para párrafos */
+p {
+    margin: 0 0 15px 0;
+}
+
+/* Opcional: Estilo para enlaces */
+a {
+    color: white;
+    /* Azul para enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de la barra */
+.barra-horizontal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0d9eb8;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Estilos del logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.redes {
+    margin: 30px;
+}
+
+/* Estilos del botón */
+.boton-derecha {
+    margin-right: 150px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton-derecha:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos del footer */
+.footer {
+    /*background-color: #0d6efd;*/
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-phone {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer-socials a {
+    color: #fff;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.footer-socials a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

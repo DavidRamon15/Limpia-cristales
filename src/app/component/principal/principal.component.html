@@ -1,0 +1,146 @@
+<main>
+    <div id="myCarousel" class="carousel slide mb-6 pt-6 h-100" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../../assets/imagenes/banner.jpg" class="d-block w-100" alt="Image 1">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Cristales impecables, vistas perfectas.</h1>
+                        <p class=""> Rápido, eficiente y profesional.</p>
+                        <p><a class="btn btn-lg btn-dark" href="#">Pide cita ahora</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assets/imagenes/Stock2.jpg" class="d-block w-100" alt="Image 2">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Dale brillo a tu hogar o negocio.</h1>
+                        <p> Servicio de limpieza de cristales de calidad.</p>
+                        <p><a class="btn btn-lg btn-dark" href="#">Llama que mis gatos tienen que come</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assets/imagenes/Stock3.jpg" class="d-block w-100" alt="Image 3">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>Más luz, más claridad, más limpieza.</h1>
+                        <p>Confía en expertos en limpieza de cristales.</p>
+                        <p><a class="btn btn-lg btn-dark" href="#">Solo juego al LOLILLO</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- Marketing messaging and featurettes
+================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+        <div class="row text-center">
+            <div class="col-lg-4 d-flex flex-column align-items-center gap-3" [ngClass]="{'active': isActive(0)}"
+                (mouseenter)="setActive(0)" (mouseleave)="clearActive()">
+                <img src="../../../assets/imagenes/20250205_143357.jpg" alt="Descripción de la imagen"
+                    class="rounded-circle d-block mx-auto border border-2 border-dark" width="140" height="140">
+                <h2 class="fw-bold text-dark mt-3">Limpieza de Oficina</h2>
+                <p class="text-muted px-3">
+                    Mantener los cristales de tu hogar impecables es clave para disfrutar de un ambiente luminoso y
+                    acogedor.
+                    Nuestro servicio profesional se adapta a todo tipo de viviendas, garantizando una limpieza profunda
+                    y segura
+                    para que tus ventanas luzcan siempre perfectas. ¡Disfruta de la claridad y el brillo en tu hogar sin
+                    preocupaciones!
+                </p>
+                <p><a class="btn btn-dark" href="#">Más información &raquo;</a></p>
+            </div>
+
+            <div class="col-lg-4 d-flex flex-column align-items-center gap-3" [ngClass]="{'active': isActive(1)}"
+                (mouseenter)="setActive(1)" (mouseleave)="clearActive()">
+                <img src="../../../assets/imagenes/20250122_084454.jpg" alt="Descripción de la imagen"
+                    class="rounded-circle d-block mx-auto border border-2 border-dark" width="140" height="140">
+                <h2 class="fw-bold text-dark mt-3">Limpieza de Terraza</h2>
+                <p class="text-muted px-3">
+                    Disfruta de una terraza impecable con nuestro servicio de limpieza profesional. Eliminamos suciedad,
+                    polvo y manchas
+                    para que puedas relajarte en un espacio limpio y confortable.
+                </p>
+                <p><a class="btn btn-dark" href="#">Más información &raquo;</a></p>
+            </div>
+
+            <div class="col-lg-4 d-flex flex-column align-items-center gap-3" [ngClass]="{'active': isActive(2)}"
+                (mouseenter)="setActive(2)" (mouseleave)="clearActive()">
+                <img src="../../../assets/imagenes/20250122_080332.jpg" alt="Descripción de la imagen"
+                    class="rounded-circle d-block mx-auto border border-2 border-dark" width="140" height="140">
+                <h2 class="fw-bold text-dark mt-3">Limpieza de Local</h2>
+                <p class="text-muted px-3">
+                    Mantenemos tu local en perfectas condiciones con un servicio de limpieza eficiente y adaptado a tus
+                    necesidades.
+                    Un espacio limpio mejora la imagen de tu negocio y la comodidad de tus clientes.
+                </p>
+                <p><a class="btn btn-dark" href="#">Más información &raquo;</a></p>
+            </div>
+        </div>
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">¡Cristales Impecables en un Instante!
+                    <span class="text-body-secondary">La limpieza que tu hogar merece.</span>
+                </h2>
+                <p class="lead">Transforma tu espacio con un brillo inigualable. Deja que nuestros expertos en limpieza
+                    de cristales se encarguen de cada rincón, ofreciendo resultados rápidos, eficaces y duraderos. ¡Te
+                    sorprenderás con la diferencia!</p>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="../../../assets/imagenes/20250113_113507.jpg" alt="Descripción de la imagen"
+                    class="featurette-image img-fluid mx-auto" width="350" height="350">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Cristales Impecables para tu Local Comercial<br>
+                    <span class="text-body-secondary">Una imagen clara refleja tu profesionalismo.</span>
+                </h2>
+                <p class="lead">La limpieza de cristales en tu establecimiento es clave para mantener una imagen
+                    profesional y acogedora. Nuestro equipo especializado garantiza un servicio eficiente, rápido y
+                    seguro para que tu negocio luzca siempre en su mejor estado. ¡Haz que tu local brille con la
+                    confianza de los expertos!</p>
+            </div>
+            <div class="col-md-5">
+                <img src="../../../assets/imagenes/20250122_084508.jpg" alt="Descripción de la imagen"
+                    class="featurette-image img-fluid mx-auto" width="350" height="350">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- <app-video-carousel></app-video-carousel>-->
+
+
+        <app-instagram-feed></app-instagram-feed>
+
+    </div><!-- /.container -->
