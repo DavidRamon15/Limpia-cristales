@@ -1,18 +1,11 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "dist/Limpia-cristales/**",
-            "use": "@vercel/static"
-        }
-    ],
-    "routes": [
+    "rewrites": [
         {
             "handle": "filesystem"
         },
         {
-            "src": "/.*",
-            "dest": "/index.html"
+            "source": "/(.*)",
+            "destination": "/index.html"
         }
     ]
 }
