@@ -32,6 +32,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/Limpia-cristales/",
               "budgets": [
                 {
                   "type": "initial",
