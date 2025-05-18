@@ -28,6 +28,19 @@ main {
     transition: background-color 0.3s ease;
 }
 
+.navbar.inicio {
+    background-color: transparent;
+}
+
+.navbar.default {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: background-color 0.3s ease-in-out;
+}
+
 /* Estilo adicional para títulos */
 h1,
 h2,

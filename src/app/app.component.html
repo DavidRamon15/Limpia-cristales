@@ -1,84 +1,75 @@
-<!-- 
- <div class="barra-horizontal">
-
-  <div class="logo">
-    <img src="../assets/imagenes/logo_final.jpg" alt="Logo" width="100%">
-  </div>
-
-  <div class="d-flex">
-    <a href="https://www.instagram.com/limpiacristales_capel/" target="_blank" rel="noopener noreferrer"
-      class="redes"><img src="../assets/icons/instagram.svg" alt="Logo" width="300%">
-    </a>
-    <a href="https://www.instagram.com/nombre_de_usuario/" target="_blank" rel="noopener noreferrer" class="redes"><img
-        src="../assets/icons/tiktok.svg" alt="Logo" width="300%">
-    </a>
-  </div>
-
-
-
-  <button class="boton-derecha">Ponte en Contacto</button>
-</div>
--->
 <!-- Cabecera -->
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top cabecera" [ngClass]="{ 'header-black': scrolled }">
-    <div class=" container-fluid d-flex justify-center align-items-center">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top cabecera" [ngClass]="navbarClasses" role=" navigation"
+    aria-label="Menú principal">
+    <div class="container-fluid d-flex justify-center align-items-center">
+
       <div class="d-flex justify-content-center flex-grow-1">
-        <a class="navbar-brand" href="#">
-          <img src="../../../assets/imagenes/logoPNG.png" alt="Logo" width="80"
+        <a class="navbar-brand" routerLink="/" aria-label="Inicio - Jose Capel Limpieza de Cristales">
+          <img src="assets/imagenes/Logo_SinLetras.png" alt="Logo de Limpiezas Jose Capel" width="80"
             class="d-flex justify-content-center align-items-center">
         </a>
       </div>
+
       <div class="d-flex justify-content-center flex-grow-1">
-        <a routerLink="/contacto" class="btn btn-dark">Contacta</a>
+        <a routerLink="/contacto" class="btn btn-dark" aria-label="Ir a la página de contacto">Contacta</a>
       </div>
+
     </div>
   </nav>
 </header>
+
 <router-outlet></router-outlet>
-<footer class="footer">
+
+<!-- Pie de página -->
+<footer class="footer" role="contentinfo">
   <div class="footer-container">
+
     <!-- Columna 1: Logo, Teléfono, Redes Sociales -->
     <div class="footer-column">
-      <img src="../assets/imagenes/logo_600.webp" alt="Logo" class="footer-logo">
-      <p class="footer-phone">Llámanos: +123 456 789</p>
-      <div class="footer-socials">
-        <a href="https://www.instagram.com/limpiacristales_capel/" target="_blank" rel="noopener noreferrer"><img
-            src="../assets/icons/instagram.svg" alt="Logo" width="10%">
+      <img src="assets/imagenes/logo_600.webp" alt="Logo de Jose Capel" class="footer-logo" width="120">
+      <p class="footer-phone">Llámanos: <a href="tel:+123456789">+123 456 789</a></p>
+
+      <div class="footer-socials" aria-label="Redes sociales">
+        <a href="https://www.instagram.com/limpiacristales_capel/" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram">
+          <img src="assets/icons/instagram.svg" alt="Instagram Jose Capel" width="24">
         </a>
-        <a href="https://www.tiktok.com/@limpiacristales_capel" target="_blank" rel="noopener noreferrer"><img
-            src="../assets/icons/tiktok.svg" alt="Logo" width="10%">
+        <a href="https://www.tiktok.com/@limpiacristales_capel" target="_blank" rel="noopener noreferrer"
+          aria-label="TikTok">
+          <img src="assets/icons/tiktok.svg" alt="TikTok Jose Capel" width="24">
         </a>
         <a href="https://wa.me/123456789?text=Hola%2C%20%C2%BFpuedo%20ayudarte%3F" target="_blank"
-          rel="noopener noreferrer">
-          <img src=" ../assets/icons/whatsapp.svg" alt="Logo" width="10%">
+          rel="noopener noreferrer" aria-label="WhatsApp">
+          <img src="assets/icons/whatsapp.svg" alt="WhatsApp Jose Capel" width="24">
         </a>
-
       </div>
     </div>
 
-    <!-- Columna 2: Lista de Servicios -->
+    <!-- Columna 2: Servicios -->
     <div class="footer-column">
-      <h4>Servicios</h4>
+      <h2>Servicios</h2>
       <ul>
         <li><a href="#">Limpieza de Viviendas Particulares</a></li>
-        <li><a href="#">Limpieza de Edificios, Comunidades</a></li>
-        <li><a href="#">Limpieza de Oficinas, Comercios y Escaparates</a></li>
+        <li><a href="#">Limpieza de Edificios y Comunidades</a></li>
+        <li><a href="#">Limpieza de Oficinas y Comercios</a></li>
       </ul>
     </div>
 
-    <!-- Columna 3: Datos Personales -->
+    <!-- Columna 3: Información de contacto -->
     <div class="footer-column">
-      <h4>Datos Personales</h4>
+      <h2>Datos de Contacto</h2>
       <p><strong>Nombre:</strong> Jose Capel</p>
-      <p><strong>Correo:</strong> juan@example.com</p>
-      <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad</p>
+      <p><strong>Email:</strong> <a href="mailto:juan@example.com">juan@example.com</a></p>
+      <p><strong>Dirección:</strong> Calle Ficticia 123, [Ciudad]</p>
     </div>
+
+    <!-- Columna 4: Políticas -->
     <div class="footer-column">
-      <h4>Politicas</h4>
+      <h2>Políticas</h2>
       <ul>
-        <li><a routerLink="/politica-privacidad">Politica de Privacidad</a></li>
-        <li><a routerLink="/politica-cookies">Politica de Cookies</a></li>
+        <li><a routerLink="/politica-privacidad">Política de Privacidad</a></li>
+        <li><a routerLink="/politica-cookies">Política de Cookies</a></li>
       </ul>
     </div>
   </div>
