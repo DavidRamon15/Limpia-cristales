@@ -13,6 +13,9 @@ import { InstagramFeedComponent } from './component/instagram-feed/instagram-fee
 import { PoliticasPrivacidadComponent } from './component/politica/politicas-privacidad/politicas-privacidad.component';
 import { PoliticaCookiesComponent } from './component/politica-cookies/politica-cookies.component';
 import { LimpiezaOficinaComponent } from './component/limpieza-oficina/limpieza-oficina.component';
+import { LimpiezaLocalComponent } from './component/limpieza-local/limpieza-local.component';
+import { LimpiezaCasaComponent } from './component/limpieza-casa/limpieza-casa.component';
+import { ImageModalComponent } from './component/image-modal/image-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { LimpiezaOficinaComponent } from './component/limpieza-oficina/limpieza-
     InstagramFeedComponent,
     PoliticasPrivacidadComponent,
     PoliticaCookiesComponent,
-    LimpiezaOficinaComponent
+    LimpiezaOficinaComponent,
+    LimpiezaLocalComponent,
+    LimpiezaCasaComponent,
+    ImageModalComponent
   ],
   imports: [
     BrowserModule,

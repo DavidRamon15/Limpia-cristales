@@ -30,8 +30,8 @@
                         <h1>Dale brillo a tu hogar o negocio.</h1>
                         <p>Servicio de limpieza de cristales de calidad.</p>
                         <p><a class="btn btn-lg btn-dark"
-                                aria-label="Solicitar servicio de limpieza para hogar o negocio">Llama que mis gatos
-                                tienen que comer</a></p>
+                                aria-label="Solicitar servicio de limpieza para hogar o negocio">
+                                Solicita servicio de limpieza para hogar o negocio</a></p>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,8 @@
                         <h1>Más luz, más claridad, más limpieza.</h1>
                         <p>Confía en expertos en limpieza de cristales.</p>
                         <p><a class="btn btn-lg btn-dark" href="#"
-                                aria-label="Conoce nuestro servicio de limpieza profesional">Solo juego al LOLILLO</a>
+                                aria-label="Conoce nuestro servicio de limpieza profesional">Conoce nuestro servicio de
+                                limpieza profesional</a>
                         </p>
                     </div>
                 </div>
@@ -96,8 +97,9 @@
                     polvo y manchas
                     para que puedas relajarte en un espacio limpio y confortable.
                 </p>
-                <p><a class="btn btn-dark" href="#" aria-label="Más información sobre limpieza de terrazas"
-                        itemprop="url">Más información &raquo;</a></p>
+                <p><a class="btn btn-dark" routerLink="/limpieza-casa" href="#"
+                        aria-label="Más información sobre limpieza de terrazas" itemprop="url">Más información
+                        &raquo;</a></p>
             </div>
 
             <div class="col-lg-4 d-flex flex-column align-items-center gap-3" itemscope
@@ -112,8 +114,9 @@
                     necesidades.
                     Un espacio limpio mejora la imagen de tu negocio y la comodidad de tus clientes.
                 </p>
-                <p><a class="btn btn-dark" href="#" aria-label="Más información sobre limpieza de locales comerciales"
-                        itemprop="url">Más información &raquo;</a></p>
+                <p><a class="btn btn-dark" routerLink="/limpieza-local" href="#"
+                        aria-label="Más información sobre limpieza de locales comerciales" itemprop="url">Más
+                        información &raquo;</a></p>
             </div>
         </div>
 
@@ -133,7 +136,8 @@
             </div>
             <div class="col-md-5 text-center">
                 <img src="assets/imagenes/20250113_113507.jpg" alt="Profesionales limpiando cristales en hogar"
-                    class="featurette-image img-fluid mx-auto" width="350" height="350" />
+                    class="featurette-image img-fluid mx-auto" width="350" height="350"
+                    (click)="modal.abrirModal('assets/imagenes/20250113_113507.jpg', 'Profesionales limpiando cristales en hogar')" />
             </div>
         </div>
 
@@ -155,7 +159,8 @@
             <div class="col-md-5">
                 <img src="assets/imagenes/20250122_084508.jpg"
                     alt="Limpieza profesional de cristales en local comercial"
-                    class="featurette-image img-fluid mx-auto" width="350" height="350" />
+                    class="featurette-image img-fluid mx-auto" width="350" height="350"
+                    (click)="modal.abrirModal('assets/imagenes/20250122_084508.jpg', 'Limpieza profesional de cristales en local comercial')" />
             </div>
         </div>
 
@@ -165,3 +170,5 @@
         <app-instagram-feed></app-instagram-feed>
     </div><!-- /.container -->
 </main>
+
+<app-image-modal #modal></app-image-modal>

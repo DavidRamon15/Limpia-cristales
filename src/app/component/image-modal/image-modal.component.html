@@ -1,0 +1,14 @@
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-white ">
+            <div class="modal-header border-0 ">
+                <h3 class="modal-title ">{{this.alt}}</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img [src]="src" [alt]="alt" class="img-fluid rounded" />
+            </div>
+        </div>
+    </div>
+</div>

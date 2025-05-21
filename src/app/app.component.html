@@ -18,8 +18,10 @@
     </div>
   </nav>
 </header>
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>
 
-<router-outlet></router-outlet>
 
 <!-- Pie de página -->
 <footer class="footer" role="contentinfo">
@@ -50,9 +52,9 @@
     <div class="footer-column">
       <h2>Servicios</h2>
       <ul>
-        <li><a href="#">Limpieza de Viviendas Particulares</a></li>
-        <li><a href="#">Limpieza de Edificios y Comunidades</a></li>
-        <li><a href="#">Limpieza de Oficinas y Comercios</a></li>
+        <li><a routerLink="/limpieza-casa">Limpieza de Viviendas Particulares</a></li>
+        <li><a routerLink="/limpieza-local">Limpieza de Edificios y Comunidades</a></li>
+        <li><a routerLink="/limpieza-oficina">Limpieza de Oficinas y Comercios</a></li>
       </ul>
     </div>
 
@@ -60,8 +62,7 @@
     <div class="footer-column">
       <h2>Datos de Contacto</h2>
       <p><strong>Nombre:</strong> Jose Capel</p>
-      <p><strong>Email:</strong> <a href="mailto:juan@example.com">juan@example.com</a></p>
-      <p><strong>Dirección:</strong> Calle Ficticia 123, [Ciudad]</p>
+      <p><strong>Email:</strong> <a href="mailto:juan@example.com">limpiacristalescapel@gmail.com</a></p>
     </div>
 
     <!-- Columna 4: Políticas -->

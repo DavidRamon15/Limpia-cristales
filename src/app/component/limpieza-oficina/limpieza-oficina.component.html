@@ -31,9 +31,12 @@
             </div>
             <div class="col-md-5">
                 <img src="assets/imagenes/20250122_084508.jpg" alt="Descripción de la imagen"
-                    class="featurette-image img-fluid mx-auto" width="350" height="350">
+                    class="featurette-image img-fluid mx-auto" width="350" height="350"
+                    (click)="modal.abrirModal('assets/imagenes/20250122_084508.jpg', 'Cristales')">
             </div>
         </div>
         <hr class="featurette-divider">
     </div>
 </main>
+
+<app-image-modal #modal></app-image-modal>
