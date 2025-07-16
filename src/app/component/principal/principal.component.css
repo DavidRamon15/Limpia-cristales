@@ -91,7 +91,13 @@ main {
 
 #myCarousel .carousel-item img {
     object-fit: cover;
-    height: 1000px;
+    height: 900px;
+    width: 100%;
+}
+
+#myCarousel .carousel-item video {
+    object-fit: cover;
+    height: 900px;
     width: 100%;
 }
 
