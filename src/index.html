@@ -59,6 +59,52 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <link rel="stylesheet" id="silktide-consent-manager-css" href="assets/cookie-banner/silktide-consent-manager.css">
+  <script src="assets/cookie-banner/silktide-consent-manager.js"></script>
+  <script>
+    silktideCookieBannerManager.updateCookieBannerConfig({
+      background: {
+        showBackground: true
+      },
+      cookieIcon: {
+        position: "bottomLeft"
+      },
+      cookieTypes: [
+        {
+          id: "necessary",
+          name: "Necesario",
+          description: "<p>\n</p><p data-start=\"497\" data-end=\"575\"></p><p></p><blockquote data-start=\"229\" data-end=\"495\"><p data-start=\"231\" data-end=\"495\"><strong data-start=\"231\" data-end=\"326\">Esta web no utiliza cookies propias ni de terceros, ni recoge datos personales del usuario.</strong><br data-start=\"326\" data-end=\"329\">\nSolo se recogen datos si tú los proporcionas voluntariamente mediante formularios de contacto u otros medios.<br data-start=\"440\" data-end=\"443\">\nPuedes continuar navegando con total tranquilidad.</p>\n</blockquote>",
+          required: true,
+          onAccept: function () {
+
+          }
+        }
+      ],
+      text: {
+        banner: {
+          description: "<strong data-start=\"231\" data-end=\"326\" style=\"color: rgb(36, 51, 71); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px;\">Esta web no utiliza cookies propias ni de terceros, ni recoge datos personales del usuario.</strong><br data-start=\"326\" data-end=\"329\" style=\"color: rgb(36, 51, 71); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px;\"><p><span style=\"color: rgb(36, 51, 71); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px;\">Solo se recogen datos si tú los proporcionas voluntariamente mediante formularios de contacto u otros medios.</span></p>",
+          acceptAllButtonText: "Aceptar",
+          acceptAllButtonAccessibleLabel: "Accept all cookies",
+          rejectNonEssentialButtonText: "Rechazar",
+          rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+          preferencesButtonText: "Preferencia",
+          preferencesButtonAccessibleLabel: "Toggle preferences"
+        },
+        preferences: {
+          title: "Personaliza tus Cookies",
+          description: "<p><strong data-start=\"231\" data-end=\"326\" style=\"color: rgb(36, 51, 71); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px; letter-spacing: normal;\">Esta web no utiliza cookies propias ni de terceros, ni recoge datos personales del usuario.</strong><br data-start=\"326\" data-end=\"329\" style=\"color: rgb(36, 51, 71); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px; letter-spacing: normal;\"><span style=\"color: rgb(36, 51, 71); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px; letter-spacing: normal;\">Solo se recogen datos si tú los proporcionas voluntariamente mediante formularios de contacto u otros medios.</span><br data-start=\"440\" data-end=\"443\" style=\"color: rgb(36, 51, 71); font-family: &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 16px; letter-spacing: normal;\"><br></p>",
+          creditLinkText: "Get this banner for free",
+          creditLinkAccessibleLabel: "Get this banner for free"
+        }
+      }
+    });
+  </script>
+
+  <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+
 </head>
 
 <body class="mat-typography">

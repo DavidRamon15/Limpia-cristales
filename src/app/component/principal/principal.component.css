@@ -236,3 +236,30 @@ main {
 }
 
 /**/
+
+/*boton flotante */
+.volume-control-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+}
+
+.stylish-range {
+    width: 200px;
+    accent-color: #ffffff;
+    /* blanco para el pulgar */
+    transition: all 0.3s ease-in-out;
+}
+
+.stylish-range:hover {
+    accent-color: #0d6efd;
+    /* azul Bootstrap al pasar el ratón */
+}

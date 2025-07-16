@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-principal',
@@ -7,6 +8,12 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent {
+
+  @ViewChild('videoBanner') videoRef!: ElementRef<HTMLVideoElement>;
+
+  videoVolume = 0;
+
+
   items = [
     {
       text: 'Limpieza de ',
@@ -76,7 +83,9 @@ export class PrincipalComponent {
 
   activeIndex = 0;
 
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor(private sanitizer: DomSanitizer) {
+
+  }
 
   ngOnInit() {
   }
@@ -95,5 +104,15 @@ export class PrincipalComponent {
   isActive(index: number): boolean {
     return this.activeIndex === index;
   }
+
+
+  ngAfterViewInit(): void {
+    // ✅ Esto se ejecuta cuando videoRef ya está disponible
+    const video = this.videoRef?.nativeElement;
+    if (video) {
+      video.volume = this.videoVolume;
+    }
+  }
+
 
 }

@@ -10,20 +10,29 @@
                 aria-label="Slide 3: Más luz, más claridad, más limpieza"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/imagenes/banner.jpg" class="d-block w-100"
-                    alt="Cristales impecables con vistas perfectas en hogar" />
-                <div class="container">
+            <div class="carousel-item active position-relative" data-bs-interval="32000">
+                <video #videoBanner muted autoplay loop playsinline class="d-block w-100">
+                    <source src="assets/video/banner.mov" type="video/mp4" />
+                    Tu navegador no soporta videos HTML5.
+                </video>
+
+                <div
+                    class="container position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center">
                     <div class="carousel-caption text-start">
                         <h1>Cristales impecables, vistas perfectas.</h1>
                         <p>Rápido, eficiente y profesional.</p>
-                        <p><a class="btn btn-lg btn-dark" href="#" routerLink="/limpieza-oficina"
-                                aria-label="Solicitar cita para limpieza de cristales">Pide cita ahora</a></p>
+                        <p>
+                            <a class="btn btn-lg btn-dark" routerLink="/limpieza-oficina"
+                                aria-label="Solicitar cita para limpieza de cristales">
+                                Pide cita ahora
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
+
             <div class="carousel-item">
-                <img src="assets/imagenes/Stock2.jpg" class="d-block w-100"
+                <img src="assets/imagenes/Banner1.JPG" class="d-block w-100" data-bs-interval="5000"
                     alt="Servicio profesional de limpieza de cristales en hogar y negocio" />
                 <div class="container">
                     <div class="carousel-caption">
@@ -36,7 +45,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/imagenes/Stock3.jpg" class="d-block w-100"
+                <img src="assets/imagenes/Banner2.jpg" class="d-block w-100" data-bs-interval="5000"
                     alt="Cristales limpios que aportan luz y claridad al espacio" />
                 <div class="container">
                     <div class="carousel-caption text-end">
@@ -71,8 +80,7 @@
             <div class="col-lg-4 d-flex flex-column align-items-center gap-3" itemscope
                 itemtype="https://schema.org/Service" itemprop="hasOfferCatalog">
                 <meta itemprop="name" content="Limpieza de Oficina" />
-                <img src="assets/imagenes/20250205_143357.jpg"
-                    alt="Limpieza profesional de oficina con cristales impecables"
+                <img src="assets/imagenes/terraza.jpg" alt="Limpieza profesional de oficina con cristales impecables"
                     class="rounded-circle d-block mx-auto border border-2 border-dark" width="140" height="140" />
                 <h2 class="fw-bold text-dark mt-3" itemprop="name">Limpieza de Oficina</h2>
                 <p class="text-muted px-3" itemprop="description">
@@ -88,12 +96,12 @@
 
             <div class="col-lg-4 d-flex flex-column align-items-center gap-3" itemscope
                 itemtype="https://schema.org/Service" itemprop="hasOfferCatalog">
-                <meta itemprop="name" content="Limpieza de Terraza" />
-                <img src="assets/imagenes/20250122_084454.jpg" alt="Servicio de limpieza profesional de terrazas"
+                <meta itemprop="name" content="Limpieza de Hogar" />
+                <img src="assets/imagenes/hogar3.jpg" alt="Servicio de limpieza profesional de hogar"
                     class="rounded-circle d-block mx-auto border border-2 border-dark" width="140" height="140" />
-                <h2 class="fw-bold text-dark mt-3" itemprop="name">Limpieza de Terraza</h2>
+                <h2 class="fw-bold text-dark mt-3" itemprop="name">Limpieza de Hogar</h2>
                 <p class="text-muted px-3" itemprop="description">
-                    Disfruta de una terraza impecable con nuestro servicio de limpieza profesional. Eliminamos suciedad,
+                    Disfruta de un hogar impecable con nuestro servicio de limpieza profesional. Eliminamos suciedad,
                     polvo y manchas
                     para que puedas relajarte en un espacio limpio y confortable.
                 </p>
@@ -105,8 +113,7 @@
             <div class="col-lg-4 d-flex flex-column align-items-center gap-3" itemscope
                 itemtype="https://schema.org/Service" itemprop="hasOfferCatalog">
                 <meta itemprop="name" content="Limpieza de Local" />
-                <img src="assets/imagenes/20250122_080332.jpg"
-                    alt="Servicio de limpieza profesional para locales comerciales"
+                <img src="assets/imagenes/local2.jpg" alt="Servicio de limpieza profesional para locales comerciales"
                     class="rounded-circle d-block mx-auto border border-2 border-dark" width="140" height="140" />
                 <h2 class="fw-bold text-dark mt-3" itemprop="name">Limpieza de Local</h2>
                 <p class="text-muted px-3" itemprop="description">
@@ -135,9 +142,9 @@
                 </p>
             </div>
             <div class="col-md-5 text-center">
-                <img src="assets/imagenes/20250113_113507.jpg" alt="Profesionales limpiando cristales en hogar"
+                <img src="assets/imagenes/terraza3.jpg" alt="Profesionales limpiando cristales en hogar"
                     class="featurette-image img-fluid mx-auto" width="350" height="350"
-                    (click)="modal.abrirModal('assets/imagenes/20250113_113507.jpg', 'Profesionales limpiando cristales en hogar')" />
+                    (click)="modal.abrirModal('assets/imagenes/terraza3.jpg', 'Profesionales limpiando cristales en hogar')" />
             </div>
         </div>
 
@@ -163,7 +170,8 @@
                     (click)="modal.abrirModal('assets/imagenes/20250122_084508.jpg', 'Limpieza profesional de cristales en local comercial')" />
             </div>
         </div>
-
+        <hr class="featurette-divider" />
+        <div class="elfsight-app-36a6fbe4-a51f-49a3-8b18-4a56271bb9f1" data-elfsight-app-lazy></div>
         <hr class="featurette-divider" />
 
         <!-- <app-video-carousel></app-video-carousel>-->

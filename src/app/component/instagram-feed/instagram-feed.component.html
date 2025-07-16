@@ -8,11 +8,23 @@
                     <div class="instagram-post">
                         <div *ngIf="post.media_type === 'IMAGE'">
                             <img [src]="post.media_url" class="img-fluid" alt="Instagram Image">
+                            <div class="post-footer mt-2 d-flex justify-content-around text-secondary">
+                                <a href="https://www.instagram.com/limpiacristales_capel/" target="_blank"
+                                    rel="noopener noreferrer">❤️</a>
+                                <a href="https://www.instagram.com/limpiacristales_capel/" target="_blank"
+                                    rel="noopener noreferrer">💬</a>
+                            </div>
                         </div>
                         <div *ngIf="post.media_type === 'VIDEO'">
                             <video controls class="w-100">
                                 <source [src]="post.media_url" type="video/mp4">
                             </video>
+                            <div class="post-footer mt-2 d-flex justify-content-around text-secondary">
+                                <a href="https://www.instagram.com/limpiacristales_capel/" target="_blank"
+                                    rel="noopener noreferrer">❤️</a>
+                                <a href="https://www.instagram.com/limpiacristales_capel/" target="_blank"
+                                    rel="noopener noreferrer">💬</a>
+                            </div>
                         </div>
 
                     </div>

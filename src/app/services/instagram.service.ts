@@ -17,7 +17,7 @@ export class InstagramService {
   // Método para obtener las publicaciones
   getInstagramPosts(): Observable<any> {
     // Llamada a la API de Instagram Graph con el access token
-    return this.http.get<any>(`${this.apiUrl}?fields=id,media_type,media_url,thumbnail_url,caption,children&access_token=${this.accessToken}`)
+    return this.http.get<any>(`${this.apiUrl}?fields=id,media_type,media_url,thumbnail_url,caption,children&access_token=IGAAG33QYaZCGpBZAE4wNGlneGpLdHk4cXZAqYWhmR2U2NnI2cHMzVXZAGRGdMOTFrTU1IYkxScTlVTzFOeThJNFVkd3Q4SVVJV29LeEJxQUhNcElFeVRFZAzNnN2tVM2ZAhRmVqSERFd25vcjNHdUJWM0VfQjBacDJmRlhkb2ZAKbFE3TQZDZD`)
       .pipe(
         map(response => this.filterPosts(response.data))  // Filtramos las publicaciones
       );
@@ -27,7 +27,7 @@ export class InstagramService {
   private getCarouselImages(carouselIds: string[]): Observable<any[]> {
     // Realizamos una solicitud para cada ID de la publicación del carrusel
     const requests = carouselIds.map(id =>
-      this.http.get<any>(`https://graph.instagram.com/${id}?fields=media_url&access_token=${this.accessToken}`)
+      this.http.get<any>(`https://graph.instagram.com/${id}?fields=media_url&access_token=IGAAG33QYaZCGpBZAE4wNGlneGpLdHk4cXZAqYWhmR2U2NnI2cHMzVXZAGRGdMOTFrTU1IYkxScTlVTzFOeThJNFVkd3Q4SVVJV29LeEJxQUhNcElFeVRFZAzNnN2tVM2ZAhRmVqSERFd25vcjNHdUJWM0VfQjBacDJmRlhkb2ZAKbFE3TQZDZD`)
     );
     return forkJoin(requests);  // Hacemos todas las solicitudes en paralelo
   }
