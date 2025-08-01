@@ -269,3 +269,12 @@ main {
     accent-color: #0d6efd;
     /* azul Bootstrap al pasar el ratón */
 }
+
+@media (max-width: 768px) {
+    .sub-title-banner {
+        letter-spacing: 1px;
+        /* puedes ajustar este valor según lo que necesites */
+        line-height: 1.4;
+        /* también puedes aumentar el espacio entre líneas si hace falta */
+    }
+}

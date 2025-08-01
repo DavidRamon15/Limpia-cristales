@@ -52,7 +52,7 @@ export class PrincipalComponent {
                     </ul>
 
                     <h3>¡Pide tu presupuesto personalizado!</h3>
-                    <p>Si necesitas una limpieza de cristales profesional para tu edificio o comunidad, no dudes en <a href="mailto:contacto@tudominio.com">contactarnos</a>. Estaremos encantados de ofrecerte un servicio a la medida de tus necesidades.</p>`,
+                    <p>Si necesitas una limpieza de cristales profesional para tu edificio o comunidad, no dudes en <a href="mailto:limpiacristales.capel@gmail.com">contactarnos</a>. Estaremos encantados de ofrecerte un servicio a la medida de tus necesidades.</p>`,
       image: '../assets/imagenes/logo_600.webp'
     },
     {
@@ -76,7 +76,7 @@ export class PrincipalComponent {
                     </ul>
 
                     <h3>¡Solicita tu presupuesto hoy mismo!</h3>
-                    <p>Si necesitas un servicio profesional de limpieza de cristales para tu oficina, comercio o escaparate, no dudes en <a href="mailto:contacto@tudominio.com">contactarnos</a>. Estaremos encantados de ofrecerte una solución adaptada a tus necesidades.</p>`,
+                    <p>Si necesitas un servicio profesional de limpieza de cristales para tu oficina, comercio o escaparate, no dudes en <a href="mailto:limpiacristales.capel@gmail.com">contactarnos</a>. Estaremos encantados de ofrecerte una solución adaptada a tus necesidades.</p>`,
       image: '../assets/imagenes/logo_600.webp'
     }
   ];

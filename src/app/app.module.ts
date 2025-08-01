@@ -16,6 +16,7 @@ import { LimpiezaOficinaComponent } from './component/limpieza-oficina/limpieza-
 import { LimpiezaLocalComponent } from './component/limpieza-local/limpieza-local.component';
 import { LimpiezaCasaComponent } from './component/limpieza-casa/limpieza-casa.component';
 import { ImageModalComponent } from './component/image-modal/image-modal.component';
+import { WhatsappFloatComponent } from './shared/whatsapp-float.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ImageModalComponent } from './component/image-modal/image-modal.compone
     LimpiezaLocalComponent,
     LimpiezaCasaComponent,
     ImageModalComponent
+    , WhatsappFloatComponent
   ],
   imports: [
     BrowserModule,
