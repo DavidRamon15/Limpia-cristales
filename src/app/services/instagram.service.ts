@@ -1,15 +1,17 @@
 
 import { Injectable } from '@angular/core';
+import { environment } from '../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { forkJoin, Observable, of } from 'rxjs';
 import { catchError, map, switchMap, tap } from 'rxjs/operators';
 import { InstagramPost } from '../models/instagram-post';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class InstagramService {
-  private accessToken = '';
+  private accessToken = environment.instagramToken;
   private apiUrl: string = 'https://graph.instagram.com/me/media';
 
   constructor(private http: HttpClient) { }
@@ -17,9 +19,10 @@ export class InstagramService {
   // Método para obtener las publicaciones
   getInstagramPosts(): Observable<any> {
     // Llamada a la API de Instagram Graph con el access token
-    return this.http.get<any>(`${this.apiUrl}?fields=id,media_type,media_url,thumbnail_url,caption,children&access_token=IGAAG33QYaZCGpBZAE4wNGlneGpLdHk4cXZAqYWhmR2U2NnI2cHMzVXZAGRGdMOTFrTU1IYkxScTlVTzFOeThJNFVkd3Q4SVVJV29LeEJxQUhNcElFeVRFZAzNnN2tVM2ZAhRmVqSERFd25vcjNHdUJWM0VfQjBacDJmRlhkb2ZAKbFE3TQZDZD`)
+    return this.http.get<any>(`${this.apiUrl}?fields=id,media_type,media_url,thumbnail_url,caption,children&access_token=${this.accessToken}`)
       .pipe(
-        map(response => this.filterPosts(response.data))  // Filtramos las publicaciones
+        map(response => this.filterPosts(response.data)),
+        catchError(() => of(null))
       );
   }
 
@@ -27,7 +30,7 @@ export class InstagramService {
   private getCarouselImages(carouselIds: string[]): Observable<any[]> {
     // Realizamos una solicitud para cada ID de la publicación del carrusel
     const requests = carouselIds.map(id =>
-      this.http.get<any>(`https://graph.instagram.com/${id}?fields=media_url&access_token=IGAAG33QYaZCGpBZAE4wNGlneGpLdHk4cXZAqYWhmR2U2NnI2cHMzVXZAGRGdMOTFrTU1IYkxScTlVTzFOeThJNFVkd3Q4SVVJV29LeEJxQUhNcElFeVRFZAzNnN2tVM2ZAhRmVqSERFd25vcjNHdUJWM0VfQjBacDJmRlhkb2ZAKbFE3TQZDZD`)
+      this.http.get<any>(`https://graph.instagram.com/${id}?fields=media_url&access_token=${this.accessToken}`)
     );
     return forkJoin(requests);  // Hacemos todas las solicitudes en paralelo
   }
@@ -52,3 +55,4 @@ export class InstagramService {
     return allPosts;
   }
 }
+
