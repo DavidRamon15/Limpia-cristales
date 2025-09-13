@@ -19,9 +19,12 @@ export class ContactoComponent {
     observaciones: ''
   };
 
+  isLoading = false;
+
   constructor(private contactoService: ContactoService) { }
 
   enviarFormulario() {
+    this.isLoading = true;
     this.contactoService.enviarFormulario(this.formData).subscribe({
       next: (res) => {
         Swal.fire({
@@ -29,6 +32,7 @@ export class ContactoComponent {
           title: '¡Formulario enviado!',
           text: 'Gracias por contactarnos. Te responderemos lo antes posible.',
         });
+        this.isLoading = false;
       },
       error: (err) => {
         let errorMsg = 'Hubo un error al enviar el formulario. Inténtalo nuevamente.';
@@ -41,6 +45,7 @@ export class ContactoComponent {
           text: errorMsg,
         });
         console.error(err);
+        this.isLoading = false;
       }
     });
   }
