@@ -1,0 +1,157 @@
+/* Estilo para las leyendas del carrusel */
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0c0c0c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#myCarousel .carousel-item img {
+    object-fit: cover;
+    height: 1000px;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    color: rgb(234, 240, 244);
+    border-radius: 10px;
+
+}
+
+/* Títulos de las leyendas */
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Descripciones debajo del título */
+.carousel-caption p {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Enlaces de los botones */
+.carousel-caption .btn {
+    font-size: 1.125rem;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #0a0823;
+    /* Color del botón al pasar el mouse */
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.featurette {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: space-between;
+    /* Mantiene el espacio entre la imagen y el texto */
+}
+
+.featurette-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.text-body-secondary {
+    font-size: 1.5rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.featurette-heading span {
+    font-weight: 400;
+    color: #e74c3c;
+    /* Un color llamativo para resaltar */
+    font-style: italic;
+}
+
+.featurette-image {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.featurette-image:hover {
+    transform: scale(1.05);
+    /* Efecto de zoom suave al pasar el ratón */
+}
+
+/*Efectos*/
+.container .row .col-lg-4 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container .row .col-lg-4.active {
+    transform: scale(1.1);
+    /* Establece el efecto como si estuviera en estado de hover */
+    z-index: 1;
+    /* Asegura que el div activo esté por encima de los demás */
+}
+
+.container .row .col-lg-4:hover {
+    transform: scale(1.1);
+    /* Agranda el div al pasar el ratón */
+    z-index: 1;
+}
+
+.container .row .col-lg-4:not(.active):not(:hover) {
+    transform: scale(0.9);
+    /* Reduce el tamaño de los demás divs */
+    opacity: 0.7;
+    /* Da un poco de opacidad a los divs no seleccionados */
+}
+
+.container .row .col-lg-4 img {
+    transition: transform 0.3s ease;
+    /* Efecto suave en la imagen */
+}
+
+.container .row .col-lg-4.active img,
+.container .row .col-lg-4:hover img {
+    transform: scale(1.1);
+    /* La imagen se agranda también */
+}
+
+.container .row .col-lg-4:not(.active):not(:hover) img {
+    transform: scale(0.9);
+    /* La imagen se hace más pequeña en los divs no seleccionados */
+}
