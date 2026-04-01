@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ContactoService {
-  private apiUrl = 'https://limpia-cristales-backend.onrender.com/send-email'; // URL del backend
+  private apiUrl = 'https://limpia-cristales-backend.onrender.com/send-email';
 
   constructor(private http: HttpClient) { }
 
