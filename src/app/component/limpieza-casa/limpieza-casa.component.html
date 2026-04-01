@@ -1,81 +1,102 @@
-<main class="pt-5">
-    <div class="container marketing pt-5">
-        <div class="mt-4">
-            <h1 class="text-center title uppercase"> Limpieza de Cristales en Casas y Chalets</h1>
-        </div>
-        <hr class="featurette-divider">
+<main>
 
-        <div class="row featurette">
-            <div class="col-md-1 justify-content-center"></div>
-            <div class="col-md-10 justify-content-center">
-                <p class="lead">Ofrecemos un servicio completo de limpieza de cristales en viviendas particulares, ideal
-                    para casas y chalets. Nos encargamos de la limpieza de ventanas, persianas, cerramientos y
-                    barandillas de cristal en terrazas, asegurando un acabado impecable y sin restos de polvo ni
-                    manchas.
-                </p>
-                <p class="lead">Contamos con equipos profesionales como el mango telescópico con sistema de agua, que
-                    nos permite llegar hasta 10 metros de altura de forma segura, ideal para limpiar cristales en altura
-                    y fachadas de losa sin necesidad de andamios. También utilizamos hidrolimpiadora para eliminar
-                    suciedad incrustada y devolver el aspecto original a las superficies exteriores.
-                <p class="lead">La solución perfecta para mantener tu hogar reluciente, con cristales que dejan pasar la
-                    luz y realzan cada espacio.
-                </p>
-            </div>
-            <div class="col-md-1 justify-content-center"></div>
-        </div>
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 ">
-                <h2 class="featurette-heading fw-normal lh-1 text-center">Limpieza de Cristales y Terrazas<br></h2>
-                <p class="lead">Nos especializamos en la limpieza de cristales y persianas en viviendas, asegurando un
-                    resultado brillante y sin marcas. También cuidamos cada detalle en terrazas con barandillas y
-                    cerramientos de cristal, devolviendo la transparencia y limpieza a cada superficie. Utilizamos
-                    herramientas profesionales que garantizan un acabado impecable, incluso en zonas de difícil acceso.
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img src="assets/imagenes/terraza4.jpg" alt="Limpieza de Cristales y Terrazas"
-                    class="featurette-image img-fluid mx-auto" width="350" height="350"
-                    (click)="modal.abrirModal('assets/imagenes/terraza4.jpg', 'Descripción de la imagen')">
-            </div>
-        </div>
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1 text-center">Limpieza Exterior en Chalets<br></h2>
-                <p class="lead">Ofrecemos un servicio especializado en la limpieza de cristales y fachadas exteriores en
-                    chalets. Gracias a nuestro equipo profesional, que incluye mango telescópico con sistema de agua de
-                    hasta 10 metros de alcance y hidrolimpiadora de alta presión, eliminamos eficazmente la suciedad en
-                    ventanas altas, cerramientos y fachadas de losa, devolviendo a tu vivienda su mejor aspecto sin
-                    dañar las superficies.
-                </p>
-            </div>
-            <div class="col-md-5 text-center">
-                <video #videoPlayer muted autoplay loop width="300" height="300"
-                    class="featurette-image img-fluid mx-auto">
-                    <source src="assets/video/hogar4.mp4" type="video/mp4" />
-                    Tu navegador no soporta el video.
-                </video>
-            </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="video-container">
-            <video #videoPlayer2 autoplay loop width="250" height="250"
-                class="featurette-image img-fluid mx-auto instagram-post">
-                <source src="assets/video/hogar1.mp4" type="video/mp4" />
-                Tu navegador no soporta el video.
-            </video>
-            <video #videoPlayer3 autoplay loop width="250" height="250" class="featurette-image img-fluid mx-auto">
-                <source src="assets/video/hogar5.mp4" type="video/mp4" />
-                Tu navegador no soporta el video.
-            </video>
-
-            <video #videoPlayer4 autoplay loop width="250" height="250" class="featurette-image img-fluid mx-auto">
-                <source src="assets/video/hogar3.mp4" type="video/mp4" />
-                Tu navegador no soporta el video.
-            </video>
-        </div>
+  <!-- ── Hero ─────────────────────────────────────────────────── -->
+  <section class="hero-section" style="background-image: url('assets/imagenes/hogar2.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Servicios · Casas y Chalets</span>
+      <h1 class="hero-title">Limpieza de Cristales<br>en Hogares</h1>
+      <p class="hero-subtitle">Más luz natural, más claridad,<br>un hogar que luce impecable.</p>
+      <a class="btn btn-hero" routerLink="/contacto">Solicitar presupuesto</a>
     </div>
+  </section>
+
+  <div class="container marketing">
+
+    <!-- ── Intro ───────────────────────────────────────────────── -->
+    <div class="intro-block">
+      <span class="section-eyebrow">¿Qué incluye el servicio?</span>
+      <h2 class="intro-title">Cristales, terrazas y fachadas,<br>todo en un mismo servicio.</h2>
+      <p class="intro-text">Limpiamos ventanas, persianas, cerramientos y barandillas de cristal en terrazas.
+        Con mango telescópico de hasta 10 metros e hidrolimpiadora, llegamos a cualquier altura de forma
+        segura, sin andamios y sin dañar las superficies.</p>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- ── Featurette 1: imagen ────────────────────────────────── -->
+    <div class="row featurette align-items-center">
+      <div class="col-md-7">
+        <span class="section-eyebrow">Cristales y terrazas</span>
+        <h2 class="featurette-heading">
+          Ventanas y terrazas<br>brillantes sin esfuerzo.
+          <span class="text-body-secondary">Resultado impecable, incluso en zonas de difícil acceso.</span>
+        </h2>
+        <a class="btn btn-featurette" routerLink="/contacto">Pedir presupuesto</a>
+      </div>
+      <div class="col-md-5">
+        <img src="assets/imagenes/terraza4.jpg" alt="Limpieza de cristales y terrazas en hogar"
+          class="featurette-image img-fluid mx-auto" width="350" height="350"
+          (click)="modal.abrirModal('assets/imagenes/terraza4.jpg', 'Limpieza de Cristales y Terrazas')">
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- ── Featurette 2: vídeo ─────────────────────────────────── -->
+    <div class="row featurette align-items-center">
+      <div class="col-md-7 order-md-2">
+        <span class="section-eyebrow">Exterior en chalets</span>
+        <h2 class="featurette-heading">
+          Fachadas y ventanas en altura,<br>sin andamios.
+          <span class="text-body-secondary">Alcanzamos hasta 10 metros de forma segura.</span>
+        </h2>
+        <a class="btn btn-featurette" routerLink="/contacto">Pedir presupuesto</a>
+      </div>
+      <div class="col-md-5 text-center">
+        <video #videoPlayer muted autoplay loop playsinline
+          class="featurette-image img-fluid mx-auto" width="350" height="350">
+          <source src="assets/video/hogar4.mp4" type="video/mp4" />
+          Tu navegador no soporta el video.
+        </video>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- ── Galería de vídeos ───────────────────────────────────── -->
+    <div class="gallery-section">
+      <span class="section-eyebrow">Trabajos realizados</span>
+      <h2 class="section-title">Nuestro trabajo en acción</h2>
+      <div class="video-gallery">
+        <div class="video-card">
+          <video #videoPlayer2 muted autoplay loop playsinline>
+            <source src="assets/video/hogar1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="video-card">
+          <video #videoPlayer3 muted autoplay loop playsinline>
+            <source src="assets/video/hogar5.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="video-card">
+          <video #videoPlayer4 muted autoplay loop playsinline>
+            <source src="assets/video/hogar3.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- ── CTA final ───────────────────────────────────────────── -->
+    <div class="cta-block">
+      <h2 class="cta-title">¿Tu hogar merece más luz?</h2>
+      <p class="cta-text">Cuéntanos qué necesitas y te preparamos un presupuesto sin compromiso.</p>
+      <a class="btn btn-featurette" routerLink="/contacto">Contactar ahora</a>
+    </div>
+
+  </div>
 </main>
 
 <app-image-modal #modal></app-image-modal>
