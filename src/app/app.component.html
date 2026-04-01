@@ -25,61 +25,70 @@
 
 <!-- Pie de página -->
 <footer class="footer" role="contentinfo">
+  <div class="footer-top-bar"></div>
   <div class="footer-container">
 
     <!-- Columna 1: Logo, Teléfono, Redes Sociales -->
-    <div class="footer-column">
-      <img src="assets/imagenes/logo_600.webp" alt="Logo de Jose Capel" class="footer-logo" width="120">
-      <p class="footer-phone">Llámanos: <a href="tel:+123456789">+604 99 86 06</a></p>
-
+    <div class="footer-column footer-brand">
+      <img src="assets/imagenes/logo_600.webp" alt="Logo de Jose Capel" class="footer-logo" width="110">
+      <p class="footer-tagline">Limpieza profesional de cristales<br>en Almería.</p>
+      <a href="tel:+34604998606" class="footer-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        604 99 86 06
+      </a>
       <div class="footer-socials" aria-label="Redes sociales">
-        <a href="https://www.instagram.com/limpiacristales_capel/" target="_blank" rel="noopener noreferrer"
-          aria-label="Instagram">
-          <img src="assets/icons/instagram.svg" alt="Instagram Jose Capel" width="24">
+        <a href="https://www.instagram.com/limpiacristales_capel/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+          <img src="assets/icons/instagram.svg" alt="Instagram" width="20">
         </a>
-        <a href="https://www.tiktok.com/@limpiacristales_capel" target="_blank" rel="noopener noreferrer"
-          aria-label="TikTok">
-          <img src="assets/icons/tiktok.svg" alt="TikTok Jose Capel" width="24">
+        <a href="https://www.tiktok.com/@limpiacristales_capel" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-link">
+          <img src="assets/icons/tiktok.svg" alt="TikTok" width="20">
         </a>
-        <a href="https://wa.me/604998606?text=Hola%2C%20%C2%BFpuedo%20ayudarte%3F" target="_blank"
-          rel="noopener noreferrer" aria-label="WhatsApp">
-          <img src="assets/icons/whatsapp.svg" alt="WhatsApp Jose Capel" width="24">
+        <a href="https://wa.me/604998606?text=Hola%2C%20%C2%BFpuedo%20ayudarte%3F" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-link">
+          <img src="assets/icons/whatsapp.svg" alt="WhatsApp" width="20">
         </a>
       </div>
     </div>
 
     <!-- Columna 2: Servicios -->
     <div class="footer-column">
-      <h2>Servicios</h2>
-      <ul>
-        <li><a routerLink="/limpieza-oficina">Limpieza de Oficinas y comunidades</a></li>
-        <li><a routerLink="/limpieza-casa">Limpieza de hogares</a></li>
-        <li><a routerLink="/limpieza-local">Limpieza en Local</a></li>
+      <h3 class="footer-heading">Servicios</h3>
+      <ul class="footer-links">
+        <li><a routerLink="/limpieza-oficina">Limpieza de Oficinas</a></li>
+        <li><a routerLink="/limpieza-casa">Limpieza de Hogares</a></li>
+        <li><a routerLink="/limpieza-local">Limpieza de Locales</a></li>
       </ul>
     </div>
 
-    <!-- Columna 3: Información de contacto -->
+    <!-- Columna 3: Contacto -->
     <div class="footer-column">
-      <h2>Datos de Contacto</h2>
-      <p><strong>Nombre: </strong> Jose Capel</p>
-      <p><strong>Email: </strong> <a href="mailto:limpiacristales.capel@gmail.com">Limpiacristales.capel@gmail.com</a>
-      </p>
+      <h3 class="footer-heading">Contacto</h3>
+      <ul class="footer-links footer-contact">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Jose Capel
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:limpiacristales.capel@gmail.com">limpiacristales.capel<br>&#64;gmail.com</a>
+        </li>
+      </ul>
     </div>
 
     <!-- Columna 4: Políticas -->
     <div class="footer-column">
-      <h2>Políticas</h2>
-      <ul>
+      <h3 class="footer-heading">Legal</h3>
+      <ul class="footer-links">
         <li><a routerLink="/politica-privacidad">Política de Privacidad</a></li>
         <li><a routerLink="/politica-cookies">Política de Cookies</a></li>
       </ul>
     </div>
+
   </div>
-  <p style="font-size: 0.9em; text-align: center; color: #555;">
-    Iconos diseñados por
-    <a href="https://iconos8.es" target="_blank" rel="noopener noreferrer"
-      style="color: #007bff; text-decoration: none;">
-      Icons8
-    </a>
-  </p>
+
+  <div class="footer-bottom">
+    <span>© 2025 Jose Capel · Limpiacristales Almería</span>
+    <span>Iconos por <a href="https://iconos8.es" target="_blank" rel="noopener noreferrer">Icons8</a></span>
+  </div>
 </footer>
