@@ -1,41 +1,113 @@
-<main class="pt-5">
-    <div class="container marketing pt-5">
-        <div class="mt-4">
-            <h1 class="text-center title"> LIMPIEZA EN OFICINA</h1>
-        </div>
-        <hr class="featurette-divider">
+<main>
 
-        <div class="row featurette">
-            <div class="col-md-1 justify-content-center"></div>
-            <div class="col-md-10 justify-content-center">
-                <h2 class="featurette-heading fw-normal lh-1">¡Cristales Impecables en un Instante!
-                    <span class="text-body-secondary">La limpieza que tu hogar merece.</span>
-                </h2>
-                <p class="lead">Transforma tu espacio con un brillo inigualable. Deja que nuestros expertos en limpieza
-                    de cristales se encarguen de cada rincón, ofreciendo resultados rápidos, eficaces y duraderos. ¡Te
-                    sorprenderás con la diferencia!</p>
-            </div>
-            <div class="col-md-1 justify-content-center"></div>
-        </div>
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1">Cristales Impecables para tu Local Comercial<br>
-                    <span class="text-body-secondary">Una imagen clara refleja tu profesionalismo.</span>
-                </h2>
-                <p class="lead">La limpieza de cristales en tu establecimiento es clave para mantener una imagen
-                    profesional y acogedora. Nuestro equipo especializado garantiza un servicio eficiente, rápido y
-                    seguro para que tu negocio luzca siempre en su mejor estado. ¡Haz que tu local brille con la
-                    confianza de los expertos!</p>
-            </div>
-            <div class="col-md-5">
-                <img src="assets/imagenes/terraza.jpg" alt="Imagen_Terraza" class="featurette-image img-fluid mx-auto"
-                    width="350" height="350" (click)="modal.abrirModal('assets/imagenes/terraza.jpg', 'Cristales')">
-            </div>
-        </div>
-        <hr class="featurette-divider">
+  <!-- ── Hero ─────────────────────────────────────────────────── -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Servicios · Oficinas y Empresas</span>
+      <h1 class="hero-title">Limpieza de Cristales<br>en Oficinas</h1>
+      <p class="hero-subtitle">Un espacio luminoso y transparente mejora el ambiente<br>de trabajo y la imagen de tu empresa.</p>
+      <a class="btn btn-hero" routerLink="/contacto">Solicitar presupuesto</a>
     </div>
+  </section>
+
+  <!-- ── Intro ─────────────────────────────────────────────────── -->
+  <div class="container marketing">
+
+    <div class="intro-block">
+      <span class="section-eyebrow">¿Por qué es importante?</span>
+      <h2 class="intro-title">Cristales impecables,<br>ambiente profesional.</h2>
+      <p class="intro-text">Los cristales sucios en una oficina transmiten dejadez y reducen la entrada de luz natural,
+        afectando al bienestar y la productividad del equipo. Nuestro servicio especializado garantiza ventanas y
+        mamparas brillantes, sin marcas ni residuos, con total discreción para no interrumpir tu actividad.</p>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- ── Featurette ─────────────────────────────────────────── -->
+    <div class="row featurette align-items-center">
+      <div class="col-md-7 order-md-2">
+        <span class="section-eyebrow">Para tu negocio</span>
+        <h2 class="featurette-heading">
+          Tu imagen de empresa<br>empieza por los cristales.
+          <span class="text-body-secondary">Una oficina limpia transmite confianza y profesionalismo.</span>
+        </h2>
+        <p class="lead">Nos adaptamos a tus horarios — antes de abrir, en horario de comida o fuera del horario laboral —
+          para que el trabajo de limpieza no interrumpa en ningún momento la actividad de tu empresa. Resultados
+          impecables, siempre a tiempo.</p>
+        <a class="btn btn-featurette" routerLink="/contacto">Pedir presupuesto</a>
+      </div>
+      <div class="col-md-5">
+        <img src="assets/imagenes/terraza.jpg" alt="Limpieza profesional de cristales en oficina"
+          class="featurette-image img-fluid mx-auto" width="350" height="350"
+          (click)="modal.abrirModal('assets/imagenes/terraza.jpg', 'Cristales')">
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- ── Benefits grid ──────────────────────────────────────── -->
+    <div class="benefits-section">
+      <span class="section-eyebrow">Nuestras ventajas</span>
+      <h2 class="section-title">¿Por qué elegirnos?</h2>
+      <div class="benefits-grid">
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Trabajo garantizado</h3>
+          <p>Revisamos el resultado contigo antes de irnos. Sin marcas, sin residuos, sin excusas.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3>Sin interrupciones</h3>
+          <p>Trabajamos en los horarios que mejor se adapten a tu empresa, incluso fuera del horario laboral.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/>
+              <line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+          </div>
+          <h3>Trato cercano</h3>
+          <p>Empresa local de Almería. Te atendemos de forma directa y personalizada, sin intermediarios.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h3>Servicio periódico</h3>
+          <p>Diseñamos un plan de mantenimiento adaptado a tu frecuencia: semanal, quincenal o mensual.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- ── CTA final ───────────────────────────────────────────── -->
+    <div class="cta-block">
+      <h2 class="cta-title">¿Listo para tener una oficina impecable?</h2>
+      <p class="cta-text">Cuéntanos qué necesitas y te preparamos un presupuesto sin compromiso.</p>
+      <a class="btn btn-featurette" routerLink="/contacto">Contactar ahora</a>
+    </div>
+
+  </div>
 </main>
 
 <app-image-modal #modal></app-image-modal>
