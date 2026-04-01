@@ -1,60 +1,59 @@
 <main>
     <app-whatsapp-float></app-whatsapp-float>
-    <div id="myCarousel" class="carousel slide mb-6 pt-6 h-100" data-bs-ride="carousel"
+
+    <!-- ── Carousel ─────────────────────────────────────────────── -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"
         aria-label="Carrusel de imágenes promocionales">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1: Cristales impecables, vistas perfectas"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1: Cristales impecables, vistas perfectas"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
                 aria-label="Slide 2: Dale brillo a tu hogar o negocio"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
                 aria-label="Slide 3: Más luz, más claridad, más limpieza"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active position-relative " data-bs-interval="32000">
+            <div class="carousel-item active position-relative" data-bs-interval="32000">
                 <video #videoBanner muted autoplay loop playsinline class="d-block w-100">
                     <source src="assets/video/banner.mp4" type="video/mp4" />
                     Tu navegador no soporta videos HTML5.
                 </video>
-
+                <div class="carousel-overlay"></div>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Cristales impecables, vistas perfectas.</h1>
-                        <p class="sub-title-banner">Rápido, eficiente y profesional.</p>
-                        <p>
-                            <a class="btn btn-lg btn-dark" routerLink="/contacto"
-                                aria-label="Solicitar cita para limpieza de cristales">
-                                Pide cita ahora
-                            </a>
-                        </p>
+                        <span class="caption-tag">Almería · Cristalería Profesional</span>
+                        <h1>Cristales impecables,<br>vistas perfectas.</h1>
+                        <p class="sub-title-banner">Rápido, eficiente y sin complicaciones.</p>
+                        <a class="btn btn-caption" routerLink="/contacto"
+                            aria-label="Solicitar cita para limpieza de cristales">Pide cita ahora</a>
                     </div>
                 </div>
             </div>
-
-            <div class="carousel-item">
-                <img src="assets/imagenes/Banner1.JPG" class="d-block w-100" data-bs-interval="5000"
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="assets/imagenes/Banner1.JPG" class="d-block w-100"
                     alt="Servicio profesional de limpieza de cristales en hogar y negocio" />
+                <div class="carousel-overlay"></div>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Dale brillo a tu hogar o negocio.</h1>
-                        <p class="sub-title-banner">Servicio de limpieza de cristales de calidad.</p>
-                        <p><a class="btn btn-lg btn-dark" routerLink="/contacto"
-                                aria-label="Solicitar servicio de limpieza para hogar o negocio">
-                                Solicita servicio de limpieza para hogar o negocio</a></p>
+                        <span class="caption-tag">Hogar y Negocio</span>
+                        <h1>Dale brillo a tu hogar<br>o negocio.</h1>
+                        <p class="sub-title-banner">Calidad profesional en cada cristal.</p>
+                        <a class="btn btn-caption" routerLink="/contacto"
+                            aria-label="Solicitar servicio de limpieza">Solicita presupuesto</a>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="assets/imagenes/Banner2.jpg" class="d-block w-100" data-bs-interval="5000"
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="assets/imagenes/Banner2.jpg" class="d-block w-100"
                     alt="Cristales limpios que aportan luz y claridad al espacio" />
+                <div class="carousel-overlay"></div>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Más luz, más claridad, más limpieza.</h1>
-                        <p class="sub-title-banner">Confía en expertos en limpieza de cristales.</p>
-                        <p><a class="btn btn-lg btn-dark" href="#" routerLink="/contacto"
-                                aria-label="Conoce nuestro servicio de limpieza profesional">Conoce nuestro servicio de
-                                limpieza profesional</a>
-                        </p>
+                        <span class="caption-tag">Expertos en Cristales</span>
+                        <h1>Más luz, más claridad,<br>más vida.</h1>
+                        <p class="sub-title-banner">Confía en los expertos de Almería.</p>
+                        <a class="btn btn-caption" routerLink="/contacto"
+                            aria-label="Conocer servicios de limpieza profesional">Ver servicios</a>
                     </div>
                 </div>
             </div>
@@ -71,75 +70,151 @@
         </button>
     </div>
 
+    <!-- ── Marketing ────────────────────────────────────────────── -->
     <div class="container marketing" itemscope itemtype="https://schema.org/Service">
         <meta itemprop="serviceType" content="Limpieza de cristales" />
-        <meta itemprop="provider" content="Nombre de tu empresa o negocio" />
+        <meta itemprop="provider" content="Cristalero de Almería" />
         <meta itemprop="areaServed" content="Almería" />
 
-        <div class="row text-center">
-            <div class="col-lg-4 d-flex flex-column align-items-center gap-3" itemscope
-                itemtype="https://schema.org/Service" itemprop="hasOfferCatalog">
+        <!-- Section header -->
+        <div class="services-header">
+            <span class="section-eyebrow">Nuestros servicios</span>
+            <h2 class="section-title">Soluciones de limpieza<br>para cada espacio</h2>
+        </div>
+
+        <!-- Service cards -->
+        <div class="row services-row g-4">
+            <div class="col-lg-4" itemscope itemtype="https://schema.org/Service" itemprop="hasOfferCatalog">
                 <meta itemprop="name" content="Limpieza en Oficina" />
-                <img src="assets/imagenes/terraza.jpg" alt="Limpieza profesional de oficina con cristales impecables"
-                    class="rounded-circle d-block mx-auto border border-2 border-dark" width="140" height="140" />
-                <h2 class="fw-bold text-dark mt-3" itemprop="name">Limpieza en Oficina</h2>
-                <p class="text-muted px-3" itemprop="description">
-                    Mantener los cristales de tu oficina impecables es clave para un ambiente luminoso y profesional.
-                    Nuestro servicio profesional garantiza una limpieza profunda y segura para que tus ventanas luzcan
-                    siempre perfectas.
-                    ¡Disfruta de la claridad y el brillo en tu lugar de trabajo sin preocupaciones!
-                </p>
-                <p><a class="btn btn-dark" routerLink="/limpieza-oficina"
-                        aria-label="Más información sobre limpieza de oficina" itemprop="url">Más información
-                        &raquo;</a></p>
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="assets/imagenes/terraza.jpg"
+                            alt="Limpieza profesional de oficina con cristales impecables" itemprop="image" />
+                    </div>
+                    <div class="service-card-body">
+                        <h2 itemprop="name">Oficinas</h2>
+                        <p itemprop="description">Cristales limpios crean ambientes más luminosos y
+                            profesionales. Trabajamos con discreción para no interrumpir tu actividad.</p>
+                        <a routerLink="/limpieza-oficina"
+                            aria-label="Más información sobre limpieza de oficina" itemprop="url">
+                            Ver servicio
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-4 d-flex flex-column align-items-center gap-3" itemscope
-                itemtype="https://schema.org/Service" itemprop="hasOfferCatalog">
+            <div class="col-lg-4" itemscope itemtype="https://schema.org/Service" itemprop="hasOfferCatalog">
                 <meta itemprop="name" content="Limpieza en Hogar" />
-                <img src="assets/imagenes/hogar3.jpg" alt="Servicio de limpieza profesional de hogar"
-                    class="rounded-circle d-block mx-auto border border-2 border-dark" width="140" height="140" />
-                <h2 class="fw-bold text-dark mt-3" itemprop="name">Limpieza en Hogar</h2>
-                <p class="text-muted px-3" itemprop="description">
-                    Disfruta de un hogar impecable con nuestro servicio de limpieza profesional. Eliminamos suciedad,
-                    polvo y manchas
-                    para que puedas relajarte en un espacio limpio y confortable.
-                </p>
-                <p><a class="btn btn-dark" routerLink="/limpieza-casa" href="#"
-                        aria-label="Más información sobre limpieza de terrazas" itemprop="url">Más información
-                        &raquo;</a></p>
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="assets/imagenes/hogar3.jpg"
+                            alt="Servicio de limpieza profesional de hogar" itemprop="image" />
+                    </div>
+                    <div class="service-card-body">
+                        <h2 itemprop="name">Hogares</h2>
+                        <p itemprop="description">Más luz natural y una casa que luce impecable. Rápido,
+                            seguro y sin que tengas que preocuparte por nada.</p>
+                        <a routerLink="/limpieza-casa"
+                            aria-label="Más información sobre limpieza de hogar" itemprop="url">
+                            Ver servicio
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-4 d-flex flex-column align-items-center gap-3" itemscope
-                itemtype="https://schema.org/Service" itemprop="hasOfferCatalog">
+            <div class="col-lg-4" itemscope itemtype="https://schema.org/Service" itemprop="hasOfferCatalog">
                 <meta itemprop="name" content="Limpieza en Local" />
-                <img src="assets/imagenes/local2.jpg" alt="Servicio de limpieza profesional para locales comerciales"
-                    class="rounded-circle d-block mx-auto border border-2 border-dark" width="140" height="140" />
-                <h2 class="fw-bold text-dark mt-3" itemprop="name">Limpieza en Local</h2>
-                <p class="text-muted px-3" itemprop="description">
-                    Mantenemos tu local en perfectas condiciones con un servicio de limpieza eficiente y adaptado a tus
-                    necesidades.
-                    Un espacio limpio mejora la imagen de tu negocio y la comodidad de tus clientes.
-                </p>
-                <p><a class="btn btn-dark" routerLink="/limpieza-local" href="#"
-                        aria-label="Más información sobre limpieza de locales comerciales" itemprop="url">Más
-                        información &raquo;</a></p>
+                <div class="service-card">
+                    <div class="service-card-img">
+                        <img src="assets/imagenes/local2.jpg"
+                            alt="Servicio de limpieza profesional para locales comerciales" itemprop="image" />
+                    </div>
+                    <div class="service-card-body">
+                        <h2 itemprop="name">Locales</h2>
+                        <p itemprop="description">La primera impresión empieza por los cristales. Mantenemos
+                            tu escaparate y fachada siempre en perfecto estado.</p>
+                        <a routerLink="/limpieza-local"
+                            aria-label="Más información sobre limpieza de locales" itemprop="url">
+                            Ver servicio
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why us strip -->
+        <div class="why-us-strip">
+            <div class="why-us-item">
+                <div class="why-us-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                </div>
+                <div class="why-us-text">
+                    <strong>Trabajo garantizado</strong>
+                    <span>Revisamos el resultado contigo</span>
+                </div>
+            </div>
+            <div class="why-us-sep"></div>
+            <div class="why-us-item">
+                <div class="why-us-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
+                    </svg>
+                </div>
+                <div class="why-us-text">
+                    <strong>Puntualidad total</strong>
+                    <span>Cumplimos los horarios acordados</span>
+                </div>
+            </div>
+            <div class="why-us-sep"></div>
+            <div class="why-us-item">
+                <div class="why-us-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                </div>
+                <div class="why-us-text">
+                    <strong>Servicio a medida</strong>
+                    <span>Adaptado a tus necesidades</span>
+                </div>
+            </div>
+            <div class="why-us-sep"></div>
+            <div class="why-us-item">
+                <div class="why-us-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                    </svg>
+                </div>
+                <div class="why-us-text">
+                    <strong>Trato cercano</strong>
+                    <span>Empresa local de Almería</span>
+                </div>
             </div>
         </div>
 
         <hr class="featurette-divider" />
 
-        <div class="row featurette">
+        <!-- Featurette 1 -->
+        <div class="row featurette align-items-center">
             <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">
-                    ¡Cristales Impecables en un Instante!
-                    <span class="text-body-secondary">La limpieza que tu hogar merece.</span>
+                <span class="section-eyebrow">Para tu hogar</span>
+                <h2 class="featurette-heading">
+                    Cristales que dejan<br>entrar la luz de verdad.
+                    <span class="text-body-secondary">Resultados visibles desde el primer día.</span>
                 </h2>
-                <p class="lead">
-                    Transforma tu espacio con un brillo inigualable. Deja que nuestros expertos en limpieza de cristales
-                    se encarguen de cada rincón, ofreciendo resultados rápidos, eficaces y duraderos. ¡Te sorprenderás
-                    con la diferencia!
-                </p>
+                <p class="lead">Los cristales sucios bloquean gran parte de la luz natural. Nuestro equipo
+                    elimina suciedad, cal y huellas con técnica profesional, dejando tus ventanas brillantes y
+                    sin marcas. Rápido y sin complicaciones.</p>
+                <a class="btn btn-featurette" routerLink="/contacto">Solicitar presupuesto</a>
             </div>
             <div class="col-md-5 text-center">
                 <img src="assets/imagenes/terraza6.jpg" alt="Profesionales limpiando cristales en hogar"
@@ -150,18 +225,18 @@
 
         <hr class="featurette-divider" />
 
-        <div class="row featurette">
+        <!-- Featurette 2 -->
+        <div class="row featurette align-items-center">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1">
-                    Cristales Impecables para tu Local Comercial
-                    <br />
-                    <span class="text-body-secondary">Una imagen clara refleja tu profesionalismo.</span>
+                <span class="section-eyebrow">Para tu negocio</span>
+                <h2 class="featurette-heading">
+                    Tu escaparate habla<br>antes que tú.
+                    <span class="text-body-secondary">Un local limpio transmite confianza.</span>
                 </h2>
-                <p class="lead">
-                    La limpieza de cristales en tu establecimiento es clave para mantener una imagen profesional y
-                    acogedora. Nuestro equipo especializado garantiza un servicio eficiente, rápido y seguro para que tu
-                    negocio luzca siempre en su mejor estado. ¡Haz que tu local brille con la confianza de los expertos!
-                </p>
+                <p class="lead">Los clientes notan los detalles. Unos cristales impecables hacen que tu
+                    negocio transmita profesionalismo desde la calle. Nos adaptamos a tus horarios para no
+                    afectar tu actividad.</p>
+                <a class="btn btn-featurette" routerLink="/contacto">Solicitar presupuesto</a>
             </div>
             <div class="col-md-5">
                 <img src="assets/imagenes/20250122_084508.jpg"
@@ -170,13 +245,15 @@
                     (click)="modal.abrirModal('assets/imagenes/20250122_084508.jpg', 'Limpieza profesional de cristales en local comercial')" />
             </div>
         </div>
-        <hr class="featurette-divider" />
-        <div class="elfsight-app-36a6fbe4-a51f-49a3-8b18-4a56271bb9f1" data-elfsight-app-lazy></div>
+
         <hr class="featurette-divider" />
 
-        <!-- <app-video-carousel></app-video-carousel>-->
+        <div class="elfsight-app-36a6fbe4-a51f-49a3-8b18-4a56271bb9f1" data-elfsight-app-lazy></div>
+
+        <hr class="featurette-divider" />
+
         <app-instagram-feed></app-instagram-feed>
-    </div><!-- /.container -->
+    </div>
 </main>
 
 <app-image-modal #modal></app-image-modal>
