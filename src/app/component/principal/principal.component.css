@@ -6,89 +6,7 @@ main {
     background-color: #0d6efd;
 }
 
-/*
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-}
-
-.b-example-divider {
-    width: 100%;
-    height: 3rem;
-    background-color: rgba(0, 76, 176, 0.1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
-
-
-.b-example-vr {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 100vh;
-}
-
-.bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-}
-*/
-/*
-.nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-}
-*/
-/*
-.btn-bd-primary {
-    --bd-violet-bg: #712cf9;
-    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: var(--bd-violet-bg);
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #6528e0;
-    --bs-btn-hover-border-color: #6528e0;
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #5a23c8;
-    --bs-btn-active-border-color: #5a23c8;
-}
-*/
-/*
-.bd-mode-toggle {
-    z-index: 1500;
-}
-
-.bd-mode-toggle .dropdown-menu .active .bi {
-    display: block !important;
-}
-*/
-
+/* ─── Carousel ─────────────────────────────────────────────────── */
 #myCarousel .carousel-item img {
     object-fit: cover;
     height: 900px;
@@ -101,7 +19,6 @@ main {
     width: 100%;
 }
 
-/* Estilo para las leyendas del carrusel */
 .carousel-caption {
     position: absolute;
     bottom: 20px;
@@ -111,10 +28,8 @@ main {
     text-align: center;
     color: rgb(234, 240, 244);
     border-radius: 10px;
-
 }
 
-/* Títulos de las leyendas */
 .carousel-caption h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -123,7 +38,6 @@ main {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Descripciones debajo del título */
 .carousel-caption p {
     font-size: 2rem;
     font-weight: 300;
@@ -131,47 +45,123 @@ main {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-/* Enlaces de los botones */
 .carousel-caption .btn {
     font-size: 1.125rem;
-    padding: 12px 24px;
-    border-radius: 5px;
+    padding: 12px 28px;
+    border-radius: 30px;
     text-transform: uppercase;
-    transition: background-color 0.3s ease;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid rgba(255,255,255,0.6);
+    backdrop-filter: blur(4px);
 }
 
 .carousel-caption .btn:hover {
-    background-color: #0a0823;
-    /* Color del botón al pasar el mouse */
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(13,110,253,0.4);
 }
 
+/* ─── Marketing section ─────────────────────────────────────────── */
 .marketing {
-    margin-top: 40px;
-
+    margin-top: 60px;
 }
 
+/* ─── Service cards ─────────────────────────────────────────────── */
+.container .row .col-lg-4 {
+    padding: 32px 20px;
+    border-radius: 20px;
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.35s ease,
+                background 0.25s ease;
+    cursor: default;
+}
+
+.container .row .col-lg-4:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: #ffffff;
+    box-shadow: 0 12px 40px rgba(13, 110, 253, 0.12), 0 2px 8px rgba(0,0,0,0.06);
+    z-index: 1;
+}
+
+.container .row .col-lg-4:not(:hover) {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Card images */
+.container .row .col-lg-4 img {
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.35s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.container .row .col-lg-4:hover img {
+    transform: scale(1.06);
+    box-shadow: 0 8px 24px rgba(13,110,253,0.2);
+}
+
+/* Card headings */
+.container .row .col-lg-4 h2 {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    letter-spacing: -0.01em;
+}
+
+/* Card buttons */
+.container .row .col-lg-4 .btn-dark {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.container .row .col-lg-4 .btn-dark:hover {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(13,110,253,0.35);
+}
+
+/* ─── Dividers ──────────────────────────────────────────────────── */
+.featurette-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #d0dff8 30%, #d0dff8 70%, transparent);
+    margin: 56px 0;
+    opacity: 1;
+}
+
+/* ─── Featurette sections ───────────────────────────────────────── */
 .featurette {
     display: flex;
     align-items: center;
-    /* Centra verticalmente */
     justify-content: space-between;
-    /* Mantiene el espacio entre la imagen y el texto */
+    padding: 24px 0;
 }
 
 .featurette-heading {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 800;
     color: #2c3e50;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 16px;
 }
 
 .featurette-heading span {
+    display: block;
+    font-size: 1.3rem;
     font-weight: 400;
-    color: #e74c3c;
-    /* Un color llamativo para resaltar */
+    color: #6b8cba;
     font-style: italic;
+    margin-top: 6px;
 }
 
 .text-body-secondary {
@@ -179,71 +169,25 @@ main {
 }
 
 .lead {
-    font-size: 1.25rem;
-    color: #7f8c8d;
-    line-height: 1.6;
+    font-size: 1.05rem;
+    color: #5f7080;
+    line-height: 1.8;
     margin-bottom: 30px;
 }
 
-.text-center {
-    text-align: center;
-}
-
 .featurette-image {
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    cursor: pointer;
 }
 
 .featurette-image:hover {
-    transform: scale(1.05);
-    /* Efecto de zoom suave al pasar el ratón */
+    transform: scale(1.03) rotate(0.5deg);
+    box-shadow: 0 16px 48px rgba(13, 110, 253, 0.15);
 }
 
-/*Efectos*/
-.container .row .col-lg-4 {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container .row .col-lg-4.active {
-    transform: scale(1.1);
-    /* Establece el efecto como si estuviera en estado de hover */
-    z-index: 1;
-    /* Asegura que el div activo esté por encima de los demás */
-}
-
-.container .row .col-lg-4:hover {
-    transform: scale(1.1);
-    /* Agranda el div al pasar el ratón */
-    z-index: 1;
-}
-
-.container .row .col-lg-4:not(.active):not(:hover) {
-    transform: scale(0.9);
-    /* Reduce el tamaño de los demás divs */
-    opacity: 0.7;
-    /* Da un poco de opacidad a los divs no seleccionados */
-}
-
-.container .row .col-lg-4 img {
-    transition: transform 0.3s ease;
-    /* Efecto suave en la imagen */
-}
-
-.container .row .col-lg-4.active img,
-.container .row .col-lg-4:hover img {
-    transform: scale(1.1);
-    /* La imagen se agranda también */
-}
-
-.container .row .col-lg-4:not(.active):not(:hover) img {
-    transform: scale(0.9);
-    /* La imagen se hace más pequeña en los divs no seleccionados */
-}
-
-/**/
-
-/*boton flotante */
+/* ─── Volume control ─────────────────────────────────────────────── */
 .volume-control-container {
     position: absolute;
     bottom: 20px;
@@ -261,20 +205,35 @@ main {
 .stylish-range {
     width: 200px;
     accent-color: #ffffff;
-    /* blanco para el pulgar */
     transition: all 0.3s ease-in-out;
 }
 
 .stylish-range:hover {
     accent-color: #0d6efd;
-    /* azul Bootstrap al pasar el ratón */
 }
 
+/* ─── Responsive ─────────────────────────────────────────────────── */
 @media (max-width: 768px) {
     .sub-title-banner {
         letter-spacing: 1px;
-        /* puedes ajustar este valor según lo que necesites */
         line-height: 1.4;
-        /* también puedes aumentar el espacio entre líneas si hace falta */
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1.2rem;
+    }
+
+    .featurette-heading {
+        font-size: 1.5rem;
+    }
+
+    .container .row .col-lg-4:hover {
+        transform: none;
+        box-shadow: none;
+        background: transparent;
     }
 }
