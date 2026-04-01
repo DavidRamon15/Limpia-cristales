@@ -1,90 +1,128 @@
-<main class="pt-5">
-    <div class="container marketing pt-5">
-        <div class="mt-4">
-            <h1 class="text-center title uppercase"> Limpieza en Locales</h1>
-        </div>
-        <hr class="featurette-divider">
+<main>
 
-        <div class="row featurette">
-            <div class="col-md-1 justify-content-center"></div>
-            <div class="col-md-10 justify-content-center">
-                <p class="lead">En nuestro servicio de limpieza en locales comerciales, nos especializamos en devolverle
-                    la transparencia y el brillo a todo tipo de superficies acristaladas.
-                    Nos encargamos de la limpieza de fachadas de vidrio, escaparates y cristales en altura, utilizando
-                    herramientas profesionales como el mango telescópico, que nos
-                    permite acceder con seguridad y eficacia a zonas elevadas sin dejar rastro de suciedad ni marcas.
-                </p>
-                <p class="lead">Sabemos que la imagen de tu local es clave para atraer a los clientes, por eso
-                    trabajamos con productos de alta calidad que no solo limpian, sino que dejan un acabado impecable y
-                    un agradable aroma a naranja en el ambiente. Gracias a nuestro producto exclusivo, tu negocio no
-                    solo lucirá reluciente, sino que también ofrecerá una sensación de frescura y limpieza desde el
-                    primer paso.
-                <p class="lead">Confía en profesionales que cuidan cada detalle. Porque la primera impresión cuenta… y
-                    los cristales hablan por ti.
-                </p>
-            </div>
-            <div class="col-md-1 justify-content-center"></div>
-        </div>
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1 text-center">Fachadas y Rotulos<br></h2>
-                <p class="lead">Ofrecemos un servicio especializado en limpieza de fachadas y rótulos, ya sean de
-                    cristal, mármol o losa. Contamos con hidrolimpiadora profesional y mango telescópico con sistema de
-                    agua que nos permite trabajar con seguridad hasta 10 metros de altura, sin necesidad de andamios.
-                </p>
-                <p class="lead">Eliminamos suciedad incrustada, restos de contaminación y también realizamos limpieza de
-                    grafitis mediante productos específicos como ácido y la misma hidrolimpiadora, garantizando
-                    resultados visibles y duraderos.
-                </p>
-                <p class="lead">Dale nueva vida a tu fachada y mejora la imagen de tu negocio con un servicio eficaz,
-                    seguro y profesional.
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img src="assets/imagenes/20250122_084508.jpg" alt="Fachadas y Rotulos"
-                    class="featurette-image img-fluid mx-auto" width="350" height="350"
-                    (click)="modal.abrirModal('assets/imagenes/20250122_084508.jpg', 'Fachadas y Rotulos')">
-            </div>
-        </div>
-        <hr class=" featurette-divider">
-        <div class="row featurette mt-4">
-            <div class="col-md-7 ">
-                <h2 class="featurette-heading fw-normal lh-1 text-center">Cristales<br></h2>
-                <p class="lead">Mantenemos los cristales de tu local siempre limpios, transparentes y sin
-                    marcas,
-                    cuidando cada detalle para que tu negocio luzca impecable desde el exterior. Utilizamos
-                    técnicas
-                    profesionales y productos de alta calidad que no solo garantizan un brillo duradero, sino
-                    que dejan
-                    un sutil y fresco aroma a naranja en el ambiente, aportando una sensación extra de limpieza
-                    y
-                    bienestar.
-                    Limpieza de Cristales en Casas y Chalets
-                    Ofrecemos un servicio completo de limpieza de cristales en viviendas particulares, ideal
-                    para casas
-                    y chalets. Nos encargamos de la limpieza de ventanas, persianas, cerramientos y barandillas
-                    de
-                    cristal en terrazas, asegurando un acabado impecable y sin restos de polvo ni manchas.</p>
-                <p class="lead">Contamos con equipos profesionales como el mango telescópico con sistema de
-                    agua, que
-                    nos permite llegar hasta 10 metros de altura de forma segura, ideal para limpiar cristales
-                    en altura
-                    y fachadas de losa sin necesidad de andamios. También utilizamos hidrolimpiadora para
-                    eliminar
-                    suciedad incrustada y devolver el aspecto original a las superficies exteriores.</p>
-                <p class="lead">MLa solución perfecta para mantener tu hogar reluciente, con cristales que dejan
-                    pasar
-                    la luz y realzan cada espacio.</p>
-            </div>
-            <div class="col-md-5">
-                <img src="assets/imagenes/local1.jpg" alt="Descripción de la imagen"
-                    class="featurette-image img-fluid mx-auto" width="350" height="350"
-                    (click)="modal.abrirModal('assets/imagenes/terraza.jpg', 'Cristales')">
-            </div>
-        </div>
+  <!-- ── Hero ─────────────────────────────────────────────────── -->
+  <section class="hero-section" style="background-image: url('assets/imagenes/local2.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Servicios · Locales y Comercios</span>
+      <h1 class="hero-title">Limpieza de Cristales<br>en Locales</h1>
+      <p class="hero-subtitle">La primera impresión de tu negocio<br>empieza por los cristales.</p>
+      <a class="btn btn-hero" routerLink="/contacto">Solicitar presupuesto</a>
     </div>
+  </section>
+
+  <div class="container marketing">
+
+    <!-- ── Intro ───────────────────────────────────────────────── -->
+    <div class="intro-block">
+      <span class="section-eyebrow">¿Qué incluye el servicio?</span>
+      <h2 class="intro-title">Escaparates, fachadas y rótulos,<br>siempre impecables.</h2>
+      <p class="intro-text">Limpiamos fachadas de vidrio, escaparates y cristales en altura con mango telescópico
+        profesional. Usamos productos de alta calidad que dejan un acabado brillante y un sutil aroma a naranja,
+        aportando una sensación extra de frescura desde el primer paso.</p>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- ── Featurette 1 ────────────────────────────────────────── -->
+    <div class="row featurette align-items-center">
+      <div class="col-md-7 order-md-2">
+        <span class="section-eyebrow">Fachadas y rótulos</span>
+        <h2 class="featurette-heading">
+          Fachadas y rótulos<br>como el primer día.
+          <span class="text-body-secondary">Hasta 10 metros de altura, sin andamios.</span>
+        </h2>
+        <a class="btn btn-featurette" routerLink="/contacto">Pedir presupuesto</a>
+      </div>
+      <div class="col-md-5">
+        <img src="assets/imagenes/20250122_084508.jpg" alt="Limpieza de fachadas y rótulos en local comercial"
+          class="featurette-image img-fluid mx-auto" width="350" height="350"
+          (click)="modal.abrirModal('assets/imagenes/20250122_084508.jpg', 'Fachadas y Rótulos')">
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- ── Featurette 2 ────────────────────────────────────────── -->
+    <div class="row featurette align-items-center">
+      <div class="col-md-7">
+        <span class="section-eyebrow">Escaparates y cristales</span>
+        <h2 class="featurette-heading">
+          Cristales transparentes<br>que invitan a entrar.
+          <span class="text-body-secondary">Brillo duradero y acabado sin marcas.</span>
+        </h2>
+        <a class="btn btn-featurette" routerLink="/contacto">Pedir presupuesto</a>
+      </div>
+      <div class="col-md-5">
+        <img src="assets/imagenes/local1.jpg" alt="Limpieza de escaparates y cristales en local"
+          class="featurette-image img-fluid mx-auto" width="350" height="350"
+          (click)="modal.abrirModal('assets/imagenes/local1.jpg', 'Cristales en local')">
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- ── Benefits grid ──────────────────────────────────────── -->
+    <div class="benefits-section">
+      <span class="section-eyebrow">Nuestras ventajas</span>
+      <h2 class="section-title">¿Por qué elegirnos?</h2>
+      <div class="benefits-grid">
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Trabajo garantizado</h3>
+          <p>Revisamos el resultado contigo antes de irnos. Sin marcas, sin residuos.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3>Sin interrupciones</h3>
+          <p>Nos adaptamos a tu horario para no afectar la actividad de tu negocio.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+            </svg>
+          </div>
+          <h3>Precio competitivo</h3>
+          <p>Presupuesto personalizado sin compromiso, adaptado a las necesidades de tu local.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h3>Servicio periódico</h3>
+          <p>Planes de mantenimiento semanales, quincenales o mensuales a tu medida.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- ── CTA final ───────────────────────────────────────────── -->
+    <div class="cta-block">
+      <h2 class="cta-title">¿Tu local merece una imagen impecable?</h2>
+      <p class="cta-text">Cuéntanos qué necesitas y te preparamos un presupuesto sin compromiso.</p>
+      <a class="btn btn-featurette" routerLink="/contacto">Contactar ahora</a>
+    </div>
+
+  </div>
 </main>
 
 <app-image-modal #modal></app-image-modal>
