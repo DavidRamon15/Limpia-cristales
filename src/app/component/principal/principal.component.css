@@ -99,7 +99,7 @@
 /* ─── Section header ──────────────────────────────────────────── */
 .section-eyebrow {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -280,7 +280,7 @@
 }
 
 .featurette-heading {
-  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-size: clamp(1.9rem, 3.5vw, 2.6rem);
   font-weight: 800;
   color: var(--navy);
   letter-spacing: -0.02em;
@@ -290,7 +290,7 @@
 
 .featurette-heading .text-body-secondary {
   display: block;
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
   font-weight: 400;
   color: #6b8cba;
   font-style: italic;
@@ -299,7 +299,7 @@
 }
 
 .lead {
-  font-size: 1.02rem;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
   color: var(--text-muted);
   line-height: 1.8;
   margin-bottom: 28px;
