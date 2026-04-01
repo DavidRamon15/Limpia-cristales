@@ -13,26 +13,19 @@
 .hero-section {
   position: relative;
   height: 480px;
-  background: linear-gradient(135deg, #1a252f 0%, #2c3e50 50%, #34495e 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
-.hero-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse at 70% 50%, rgba(13,110,253,0.18) 0%, transparent 65%);
-  pointer-events: none;
-}
-
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><rect width="60" height="60" fill="none"/><path d="M0 60L60 0M-10 10L10-10M50 70L70 50" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></svg>');
-  pointer-events: none;
+  background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.3) 100%);
 }
 
 .hero-content {
